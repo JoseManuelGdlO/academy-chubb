@@ -19,7 +19,7 @@
         </div>
         <div class="div___subcontainer mt-30">
             <div *ngIf="data" style="background-color: #f5f5f5; border-radius: 8px; padding: 10px;">
-                <h4 class="h4___fields">Nombre 2</h4>
+                <h4 class="h4___fields">Nombre</h4>
                 <div>
                     <h6>{{data.name}}</h6>
                 </div>
@@ -45,6 +45,19 @@
         <div class="div___subcontainer mt-30 tx-center">
             <div style="background-color: #f5f5f5; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
                 <img style="width: 200px; height: 300px;" [src]="img" alt="">
+                <div (click)="downloadImage()" class="mt-20" style="display: flex; justify-content: center;">
+                    <ion-icon style="padding-top: 5px" name="cloud-download-outline"></ion-icon>
+                    <h4 style="padding-left: 10px;" class="h4___description">Descargar imagen</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="div___subcontainer mt-30 tx-center">
+            <div style="background-color: #f5f5f5; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+                <div (click)="delete()" style="display: flex; justify-content: center;">
+                    <ion-icon color="red" style="padding-top: 5px" name="trash-outline"></ion-icon>
+                    <h4 style="padding-left: 10px; color: red;" class="h4___description">Eliminar registro</h4>
+                </div>
             </div>
         </div>
 

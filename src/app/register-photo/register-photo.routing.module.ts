@@ -5,7 +5,7 @@ import { RegisterPage } from './pages/register-photo/register-photo.page';
 const routes: Routes = [
   {
     path: '',
-    component: RegisterPage,
+    component: RegisterPage
   }
 ];
 

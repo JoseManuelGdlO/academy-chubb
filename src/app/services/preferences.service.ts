@@ -18,4 +18,10 @@ export class PreferencesService {
       key
     }))
   }
+
+  async remove(key: string): Promise<void> {
+    return( await Preferences.remove({
+       key
+     }))
+   }
 }

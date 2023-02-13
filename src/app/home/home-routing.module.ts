@@ -6,7 +6,7 @@ import { HomePage } from './pages/home/home.page';
 const routes: Routes = [
   {
     path: '',
-    component: HomePage,
+    component: HomePage
   },
   {
     path: 'dashboard',

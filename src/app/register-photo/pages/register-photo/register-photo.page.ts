@@ -20,20 +20,23 @@ export class RegisterPage {
     public preferensesService: PreferencesService,
     public fingerPrintService: FingerPrintService,
     public router: Router
-  ) {}
+  ) {
+    console.log('hola');
+    
+  }
 
   async takePicture () {
     const image = await Camera.getPhoto({
       quality: 90,
       allowEditing: false,
-      resultType: CameraResultType.Uri
+      resultType: CameraResultType.DataUrl
     });
   
     // image.webPath will contain a path that can be set as an image src.
     // You can access the original file using image.path, which can be
     // passed to the Filesystem API to read the raw data of the image,
     // if desired (or pass resultType: CameraResultType.Base64 to getPhoto)
-    this.imageUrl = image.webPath ? image.webPath : '';
+    this.imageUrl = image.dataUrl ? image.dataUrl : '';
   };
 
   async openTerms() {
