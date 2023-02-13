@@ -1,0 +1,21 @@
+
+.div-button{
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    padding: 10px 22px;
+    text-align: center;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.div-button:hover{
+    background-color: green;
+    color: white;
+}

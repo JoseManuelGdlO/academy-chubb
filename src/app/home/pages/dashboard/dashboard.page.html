@@ -1,0 +1,54 @@
+<ion-content [fullscreen]="true">
+    <div (click)="this.router.navigateByUrl('photo')" class="div___header">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="2">
+                    <img style="width: 60%;" src="assets/icons/icon-back-button.svg" alt="" srcset="">
+                </ion-col>
+                <ion-col class="tx-center" size="8">
+                    <h4 style="padding-top: 5px; font-weight: 500;">Fotos</h4>
+                  </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <div class="div___content" style="margin-top: 10%">
+        <div style="padding: 38px 38px 0px 38px;">
+            <h3 class="h3___welcome">¡Tus Datos!</h3>
+            <h1 class="h1___login mt-10">Estos don tus datos</h1>
+            <h4 class="h4___description">Usa tus datos para registrarte.</h4>
+        </div>
+        <div class="div___subcontainer mt-30">
+            <div *ngIf="data" style="background-color: #f5f5f5; border-radius: 8px; padding: 10px;">
+                <h4 class="h4___fields">Nombre 2</h4>
+                <div>
+                    <h6>{{data.name}}</h6>
+                </div>
+                <h4 class="h4___fields mt-30">Apellido paterno</h4>
+                <div>
+                    <h6>{{data.lastname}}</h6>
+                </div>
+                <h4 class="h4___fields mt-30">Apellido Materno</h4>
+                <div>
+                    <h6>{{data.secondlastname}}</h6>
+                </div>
+                <h4 class="h4___fields mt-30">Fecha de nacimiento</h4>
+                <div>
+                    <h6>{{data.birthdate}}</h6>
+                </div>
+                <h4 class="h4___fields mt-30">Edad</h4>
+                <div>
+                    <h6>{{data.age}}</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="div___subcontainer mt-30 tx-center">
+            <div style="background-color: #f5f5f5; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+                <img style="width: 200px; height: 300px;" [src]="img" alt="">
+            </div>
+        </div>
+
+
+    </div>
+
+</ion-content>

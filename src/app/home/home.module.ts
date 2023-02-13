@@ -1,10 +1,13 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
+import { HomePage } from './pages/home/home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { SharedModule } from '../components/shared.module';
+import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx'; 
+import { DashboardPage } from './pages/dashboard/dashboard.page';
 
 
 @NgModule({
@@ -12,8 +15,13 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
+    SharedModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  providers: [
+    NativeGeocoder
+  ],
+  declarations: [HomePage, DashboardPage],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomePageModule {}

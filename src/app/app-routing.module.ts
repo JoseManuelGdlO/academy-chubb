@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'photo',
+    loadChildren: () => import('./register-photo/register-photo.module').then( m => m.RegisterPhotoModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'

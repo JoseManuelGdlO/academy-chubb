@@ -24,3 +24,305 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.md body, .ios body {
+  --ion-background-color: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.ml-15 {
+  margin-left: 15px !important;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ph-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.pv-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pv-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.ph-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pt-5 {
+  padding-top: 5%;
+}
+
+.mt-18 {
+  margin-top: 18px !important;
+}
+
+.mt-23 {
+  margin-top: 23px !important;
+}
+
+.mt-24 {
+  margin-top: 24px !important;
+}
+
+.mt-5 {
+  margin-top: 5px !important;
+}
+
+.pt-5px {
+  padding-top: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px !important;
+}
+
+.ph-55 {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.center-items {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.tx-center {
+  text-align: center !important;
+}
+
+.tx-right {
+  text-align: right !important;
+}
+
+.tx-left {
+  text-align: left !important;
+}
+
+.mr-8 {
+  margin-right: 8px !important;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}
+
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-12 {
+  margin-top: 12px !important;
+}
+
+.mt-14 {
+  margin-top: 14px !important;
+}
+
+.mt-15 {
+  margin-top: 15px !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mb-25 {
+  margin-bottom: 25px !important;
+}
+
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+  .mt-38 {
+    margin-top: 38px !important;
+  }
+  
+  .mt-50 {
+    margin-top: 50px !important;
+  }
+  
+  
+  .mt-2 {
+    margin-top: 2px !important;
+  }
+  
+  .pt-23 {
+    padding-top: 23px !important;
+  }
+  
+  .mb-8 {
+    margin-bottom: 8px !important;
+  }
+  
+  .pr-9 {
+    padding-right: 8px !important;
+  }
+  
+  .pl-9 {
+    padding-left: 8px !important;
+  }
+
+  .pl-11 {
+    padding-left: 11px !important;
+  }
+
+.pr-25 {
+  padding-right: 25px !important;
+}
+
+.pl-25 {
+  padding-left: 25px !important;
+}
+
+.inline {
+  display: inline-flex !important;
+}
+
+.inline-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.inline-separe {
+  display: flex;
+  justify-content: space-between;
+}
+
+//   grid section
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.subrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-33 {
+  float: left;
+  width: 33%;
+}
+
+.col-50 {
+  float: left;
+  width: 50%;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+}
+
+.col-30 {
+  float: left;
+  width: 30%;
+}
+
+  .col-20{
+    float: left;
+    width: 20%;
+  }
+
+  .col-10 {
+    float: left;
+    width: 10%;
+  }
+
+  .col-90 {
+    float: left;
+    width: 90%;
+  }
+
+  .col-5 {
+    float: left;
+    width: 5%;
+  }
+
+  .col-95 {
+    float: left;
+    width: 95%;
+  }
+  
+
+//  scroll bar
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  margin-right: 10px;
+  border-radius: 8px !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 8px;
+}
+

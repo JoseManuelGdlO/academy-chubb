@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true">
+    <div class="div___content">
+        <div style="padding: 38px 38px 0px 38px;">
+            <h3 class="h3___welcome">¡Bienvenido!</h3>
+            <h1 class="h1___login mt-10">Registrate</h1>
+            <h4 class="h4___description">Usa tus datos para registrarte.</h4>
+        </div>
+        <div class="div___subcontainer mt-30">
+            <div style="background-color: #f5f5f5; border-radius: 8px; padding: 10px;">
+                <h4 class="h4___fields">Nombre</h4>
+                <div class="mt-5">
+                    <academy-input name="name" (keyPress)="data.name = $event" [value]="data.name" placeholder="Jose Manuel"></academy-input>
+                </div>
+                <h4 class="h4___fields mt-30">Apellido paterno</h4>
+                <div class="mt-5">
+                    <academy-input name="lastame" (keyPress)="data.lastname = $event" [value]="data.lastname" placeholder="Garcia"></academy-input>
+                </div>
+                <h4 class="h4___fields mt-30">Apellido Materno</h4>
+                <div class="mt-5">
+                    <academy-input name="second" (keyPress)="data.secondlastname = $event" [value]="data.secondlastname" placeholder="de la O"></academy-input>
+                </div>
+                <h4 class="h4___fields mt-30">Fecha de nacimiento</h4>
+                <div class="mt-5">
+                    <academy-input name="birthdate" (keyPress)="data.birthdate = $event" [value]="data.birthdate" placeholder="24/06/1995"></academy-input>
+                </div>
+                <h4 class="h4___fields mt-30">Edad</h4>
+                <div class="mt-5">
+                    <academy-input name="age" (keyPress)="data.age = $event" [value]="data.age" placeholder="12"></academy-input>
+                </div>
+            </div>
+        </div>
+        <div class="div___subcontainer mt-30">
+            <div style="background-color: #f5f5f5; border-radius: 8px; padding: 10px;">
+                <h4 class="h4___fields">Ubicacion</h4>
+                <div class="mt-5">
+                    <academy-input [value]="result[0] ? result[0].addressLines[0] : ''"
+                        placeholder="Av del lago 230, Fracc Real del Country"></academy-input>
+                </div>
+            </div>
+        </div>
+        <capacitor-google-map #map></capacitor-google-map>
+        <div style="padding: 0 38px 38px 38px;">
+            <div class="mt-30">
+                <academy-button (click)="continue()" text="Continuar"></academy-button>
+            </div>
+        </div>
+
+    </div>
+
+</ion-content>

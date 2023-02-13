@@ -1,0 +1,4 @@
+
+<div [ngClass]="{ 'inline-separe': true, 'div___input' : type === 'normal', 'div___search': type === 'search'}">
+    <input [name]="name" ngDefaultControl #box (keyup)="onKey($event)" [(ngModel)]="value" (blur)="update(box.value)" [placeholder]="placeholder" type="text">
+</div>
